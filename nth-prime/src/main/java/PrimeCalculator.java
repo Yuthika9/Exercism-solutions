@@ -6,12 +6,12 @@ class PrimeCalculator {
            throw new IllegalArgumentException("Number less than two");
         
         int iterator = 2;
-        int num = nth;
+        int number = nth;
         
-        while(num>0)
+        while(number>0)
             {
                 if(isPrime(iterator))
-                    num--;
+                    number--;
                 
                 iterator++;
             }
@@ -22,14 +22,14 @@ class PrimeCalculator {
 
     boolean isPrime(int number)
     {
-        boolean div_by_two = (number%2 ==0);
-        boolean div_by_three = (number%3 == 0);
+        boolean divideByTwo = (number%2 ==0);
+        boolean divideByThree = (number%3 == 0);
         
         
         if(number == 2|| number == 3)
             return true;
         
-        if(div_by_two || div_by_three)
+        if(divideByTwo|| divideByThree)
             return false;
 
         for(int iterator = 5; iterator*iterator<=number; iterator = iterator+6)
