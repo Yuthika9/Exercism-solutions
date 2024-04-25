@@ -5,9 +5,9 @@ public class Lasagna {
         return 40;
     }
     
-    public int remainingMinutesInOven(int inoven)
+    public int remainingMinutesInOven(int inOven)
     {
-        return expectedMinutesInOven()-inoven;
+        return expectedMinutesInOven()-inOven;
     }
     
     public int preparationTimeInMinutes(int layer)
@@ -16,8 +16,8 @@ public class Lasagna {
         return layer*2;
     }
     
-    public int totalTimeInMinutes(int layer , int totaltime)
+    public int totalTimeInMinutes(int layer , int totalTime)
     {
-        return (preparationTimeInMinutes(layer) + totaltime);
+        return (preparationTimeInMinutes(layer) + totalTime);
     }
 }
